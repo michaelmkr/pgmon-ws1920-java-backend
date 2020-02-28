@@ -1,0 +1,12 @@
+package at.ac.fhstp.bad.pgmon.rest.users.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(value = HttpStatus.UNPROCESSABLE_ENTITY)
+public class UserAlreadyRegisteredException extends RuntimeException{
+
+    public UserAlreadyRegisteredException(String message){
+        super(message);
+    }
+}
